@@ -57,8 +57,22 @@ htmlcov/
 !**/weights/.gitkeep
 runs/
 wandb/
+**/output_images/
 **/output_images/*
 !**/output_images/.gitkeep
+
+# Image & Media Files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.webp
+*.bmp
+*.tiff
+*.tif
+*.heic
+*.svg
+*.ico
 
 # Node.js & Frontend
 node_modules/
