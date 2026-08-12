@@ -1,0 +1,9 @@
+ultralytics>=8.0.0
+huggingface-hub
+pillow
+opencv-python<4.10.0
+numpy<2.0.0
+torch
+torchvision
+onnx
+onnxruntime
