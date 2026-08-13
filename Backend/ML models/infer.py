@@ -6,8 +6,8 @@ from ultralytics import YOLO
 
 MODEL_REPO_ID = "foduucom/plant-leaf-detection-and-classification"
 WEIGHTS_DIR = Path(__file__).parent / "weights"
-LOCAL_WEIGHTS_PATH = WEIGHTS_DIR / "plant_leaf_detection.pt"
-DEFAULT_IMAGE_PATH = Path(__file__).parent / "sample_images" / "leaf_sample.jpg"
+LOCAL_WEIGHTS_PATH = WEIGHTS_DIR / "best.pt"
+DEFAULT_IMAGE_PATH = Path(__file__).parent / "sample_images" / "000008.jpg"
 
 
 def get_model_weights() -> Path:
