@@ -7,7 +7,7 @@ from ultralytics import YOLO
 MODEL_REPO_ID = "foduucom/plant-leaf-detection-and-classification"
 WEIGHTS_DIR = Path(__file__).parent / "weights"
 LOCAL_WEIGHTS_PATH = WEIGHTS_DIR / "best.pt"
-DEFAULT_IMAGE_PATH = Path(__file__).parent / "sample_images" / "000008.jpg"
+DEFAULT_IMAGE_PATH = Path(__file__).parent / "sample_images" / "000034.jpg"
 
 
 def get_model_weights() -> Path:
@@ -44,7 +44,7 @@ def get_model_weights() -> Path:
     return LOCAL_WEIGHTS_PATH
 
 
-def run_inference(image_path: str | Path, confidence_threshold: float = 0.25):
+def run_inference(image_path: str | Path, confidence_threshold: float = 0.50):
     """Load the YOLO model and run inference on the specified image."""
     image_path = Path(image_path)
     if not image_path.exists():
